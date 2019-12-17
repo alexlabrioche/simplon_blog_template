@@ -12,9 +12,9 @@
 - [x] global CSS reset
 - [x] REM unit rescalling
 - [x] RFS: Responsive Font Size
-- [ ] integrate mobile version
-- [ ] responsive tablet
-- [ ] responsive desktop
+- [x] integrate mobile version
+- [x] responsive tablet
+- [x] responsive desktop
 - [ ] production ready 🚀
 - [ ] launch this shit
 
