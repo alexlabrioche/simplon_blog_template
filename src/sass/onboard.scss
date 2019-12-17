@@ -1,0 +1,22 @@
+.onboard {
+  color: $almost-white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  @media screen and (min-width: $tablet) {
+    gap: 2rem;
+  }
+  @media screen and (min-width: $desktop) {
+    gap: 4rem;
+  }
+
+  h2 {
+    margin-top: 2rem;
+    grid-column-start: span 12;
+  }
+  div {
+    grid-column-start: span 12;
+    @media screen and (min-width: $tablet) {
+      grid-column-start: span 4;
+    }
+  }
+}

@@ -84,7 +84,6 @@ module.exports = {
     ],
   },
   plugins: [
-    /** Since Webpack 4 */
     new webpack.LoaderOptionsPlugin({
       options: {
         handlebarsLoader: {},
@@ -95,7 +94,7 @@ module.exports = {
       chunkFilename: '[id].css',
     }),
     new HtmlWebpackPlugin({
-      title: 'My awesome service',
+      title: 'Take | blog',
       template: './src/index.handlebars',
     }),
   ],

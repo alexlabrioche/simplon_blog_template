@@ -1,0 +1,43 @@
+footer {
+  color: $almost-white;
+  background-color: $fourth;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  input {
+    border: none;
+    margin-bottom: 2rem;
+    width: 70%;
+    height: 2rem;
+    background-color: $almost-white;
+  }
+  .footer-grid-item {
+    grid-column-start: span 12;
+  }
+  .appmap {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    .appmap-item {
+      grid-column-start: span 4;
+      span {
+        margin-bottom: 1rem;
+        display: block;
+        font-weight: 300;
+      }
+      li {
+        font-weight: 300;
+      }
+    }
+  }
+  @media screen and(min-width: $tablet) {
+    .footer-grid-item {
+      grid-column-start: span 6;
+    }
+  }
+  @media screen and(min-width: $desktop) {
+    gap: 4rem;
+    .footer-grid-item {
+      grid-column-start: span 4;
+    }
+  }
+}

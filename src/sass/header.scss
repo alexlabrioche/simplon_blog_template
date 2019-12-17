@@ -1,0 +1,44 @@
+@import './theme.scss';
+
+.hero {
+  height: 100vh;
+  background-image: url('static/mastehead.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .navigation {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .brand {
+      font-family: $heading-font;
+      letter-spacing: 0.3rem;
+      font-style: italic;
+      margin: 0;
+    }
+    img {
+      margin-right: 0.4rem;
+      height: 1.8rem;
+      width: 1.8rem;
+    }
+  }
+  section {
+    align-self: end;
+    padding-bottom: 6rem;
+    width: 70%;
+    p {
+      font-weight: 300;
+      line-height: 2rem;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 40%;
+      p {
+        line-height: 3rem;
+      }
+    }
+  }
+}

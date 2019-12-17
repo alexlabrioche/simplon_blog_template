@@ -1,0 +1,28 @@
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  background-color: $almost-white;
+  .action-card {
+    @include padding(2rem);
+    margin-bottom: 6rem;
+    @media screen and (min-width: $tablet) {
+       padding: 4rem;
+      margin: 0;
+    }
+    &:hover {
+      box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      border-radius: 0.3rem;
+    }
+  }
+  button {
+    margin-bottom: 1rem;
+  }
+  .action-icons {
+    color: $gray;
+    @include font-size(3rem);
+  }
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,26 @@
+.more {
+  height: 100vh;
+  background-image: url('static/full-image.jpg');
+  background-size: cover;
+  color: $almost-white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  @media screen and (min-width: $desktop) {
+    align-items: end;
+  }
+  .more-content {
+    grid-column: 1 / 13;
+    @media screen and (min-width: $tablet) {
+      grid-column: 1 / 8;
+    }
+    @media screen and (min-width: $desktop) {
+      grid-column: 2 / 10;
+    }
+    p {
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+  }
+}
